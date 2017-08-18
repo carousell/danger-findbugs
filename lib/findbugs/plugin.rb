@@ -45,8 +45,8 @@ module Danger
     #
 
     def report(inline_mode = true)
-      return fail(GRADLEW_NOT_FOUND) unless gradlew_exists?
-      exec_gradle_task
+      #return fail(GRADLEW_NOT_FOUND) unless gradlew_exists?
+      #exec_gradle_task
       return fail(REPORT_FILE_NOT_FOUND) unless report_file_exist?
 
       if inline_mode
