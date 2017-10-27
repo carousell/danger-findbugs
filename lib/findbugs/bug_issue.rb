@@ -13,7 +13,7 @@ class BugIssue
   end
 
   def type
-    @type ||= rank > :warn
+    @type ||= :warn
   end
 
   def line
