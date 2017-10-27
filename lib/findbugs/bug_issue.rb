@@ -13,7 +13,7 @@ class BugIssue
   end
 
   def type
-    @type ||= rank > RANK_ERROR_THRESHOLD ? :warn : :fail
+    @type ||= rank > :warn
   end
 
   def line
